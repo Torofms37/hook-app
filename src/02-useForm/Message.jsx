@@ -1,6 +1,16 @@
 
 
 export const Message = () => {
+
+  useEffect(() => {
+    first
+  
+    return () => {
+      second
+    }
+  }, [third])
+  
+
   return (
     <>
       <h3>
