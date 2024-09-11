@@ -11,6 +11,7 @@ import { Padre } from './07-tarea-memo/Padre'
 // import { CounterWithCustomHook } from './01-useState/CounterWithCustomHook'
 // import { CounterApp } from './01-useState/CounterApp'
 
+import './08-useReducer/intro-reducer'
 
 
 
