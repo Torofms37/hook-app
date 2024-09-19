@@ -5,13 +5,16 @@ const initialState = [{
   done: false,
 }];
 
-const todoReducer = ( state = initialState, action ) => {
+const todoReducer = ( state = initialState, action = {} ) => {
 
+  if ( action.type === '[TODO] add todo') {
+    return [ ...state, action.payload ];
+  }
 
   return state;
 };
 
-const todos = todoReducer();
+let todos = todoReducer();
 
 console.log(todos);
 
