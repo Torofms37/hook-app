@@ -31,7 +31,7 @@ export const TodoAdd = ({ onNewTodo }) => {
         onChange={ onInputChange }
       />
       <button type="submit" className="btn btn-outline-primary mt-1">
-        Add
+        Addd
       </button>
     </form>
   );
