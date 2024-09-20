@@ -5,12 +5,11 @@ const initialState = [{
   done: false,
 }];
 
-const todoReducer = ( state = initialState, action = {} ) => {
+const todoReducer = ( state = initialState, action ) => {
 
-  if ( action.type === '[TODO] add todo') {
-    return [ ...state, action.payload ];
+  if ( action.type === '[TODO] add todo'){
+    return [ ...state, action.payload]
   }
-
   return state;
 };
 
@@ -24,9 +23,20 @@ const newTodo = {
   done: false
 }
 
+const substractTodo = {
+  description: '',
+}
+
 const addTodoAction = {
   type: '[TODO], add todo',
   payload: newTodo
 }
 
-todos = todoReducer( todos, addTodoAction );
+const removeTodo = {
+    type: '[TODO] remove todo',
+    payload: substractTodo
+  }
+
+todos = todoReducer( todos, addTodoAction, removeTodo );
+
+console.log({ state: todos });
