@@ -11,17 +11,11 @@ export const TodoItem = ({ todo, onDeleteTodo, onToggleTodo }) => {
           {todo.description}
         </span>
       </div>
-      <button onClick={() => onDeleteTodo(todo.id)} className="btn btn-danger">
-        Borrar
-      </button>
+      <div>
+        <button onClick={() => onDeleteTodo(todo.id)} className="btn btn-danger">
+          Borrar
+        </button>
+      </div>
     </li>
   );
 };
-
-{
-  /* <input
-type="checkbox"
-checked={todo.done}
-onChange={() => onToggleTodo(todo.id)}
-/> */
-}

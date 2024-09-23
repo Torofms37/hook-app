@@ -2,7 +2,7 @@ import { useForm } from "../hooks/useForm";
 
 export const TodoAdd = ({ onNewTodo }) => {
 
-  const { description, onInputChange, onResetForm} = useForm({ 
+  const { description, onInputChange, onResetForm } = useForm({
     description: '',
   });
 
@@ -21,14 +21,14 @@ export const TodoAdd = ({ onNewTodo }) => {
   }
 
   return (
-    <form onSubmit={ onFormSubmit }>
+    <form onSubmit={onFormSubmit}>
       <input
         type="text"
         placeholder="Que vamos a hacer"
         className="form-control"
         name="description"
-        value={ description }
-        onChange={ onInputChange }
+        value={description}
+        onChange={onInputChange}
       />
       <button type="submit" className="btn btn-outline-primary mt-1">
         Add

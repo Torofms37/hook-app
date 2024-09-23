@@ -11,11 +11,6 @@ export const todoReducer = (initialState = [], action) => {
         todo.id === action.payload ? {...todo, done: !todo.done } : todo
       );
 
-    case "[TODO] Modified Todo":
-      return initialState.map(todo =>
-        todo.id === action.payload.id ? {...todo, ...action.payload } : todo
-      );
-
     default:
       return initialState;
   }

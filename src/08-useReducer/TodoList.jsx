@@ -4,7 +4,6 @@ export const TodoList = ({
   todos = [],
   onDeleteTodo,
   onToggleTodo,
-  onModifyTodo,
 }) => {
   return (
     <ul className="list-group">
@@ -14,7 +13,6 @@ export const TodoList = ({
           todo={todo}
           onDeleteTodo={onDeleteTodo}
           onToggleTodo={onToggleTodo}
-          onModifyTodo={onModifyTodo}
         />
       ))}
     </ul>
